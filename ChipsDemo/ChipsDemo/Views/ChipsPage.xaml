@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+             x:Class="ChipsDemo.Views.ChipsPage"
+             Title="Welcome Page">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="10">
+            <Frame Style="{StaticResource MenuContainerStyle}" >
+                <Grid>
+                    <Label Grid.Row="0" Text="{Binding SelectedValue}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" FontSize="16" FontAttributes="Bold"/>
+                    <material:MaterialMenuButton
+                            Grid.Row="0"
+                            HorizontalOptions="FillAndExpand"
+                            Choices="{Binding Actions}"
+                            MenuBackgroundColor="DarkBlue"
+                            MenuTextColor="White"
+                            MenuTextFontFamily="RobotoRegular"
+                            ButtonType="Text"
+                            Command="{Binding ActionCommand}"
+                            PressedBackgroundColor="Transparent"/>
+                    <Image Grid.Row="0" HorizontalOptions="End" VerticalOptions="Center">
+                        <Image.Source>
+                            <FontImageSource FontFamily="FA_Solid" Glyph="ellipsis-v" Size="20" Color="Black"/>
+                        </Image.Source>
+                    </Image>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
