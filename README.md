@@ -1,2 +1,2 @@
 # XFMaterialSample
- Sample of XFMaterial Plugin
+ Sample of XF.Material Plugin
