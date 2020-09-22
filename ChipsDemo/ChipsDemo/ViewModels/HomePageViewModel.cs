@@ -1,20 +1,16 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using System.Linq;
 using System.Windows.Input;
-using Prism.Commands;
 using Prism.Navigation;
 using Xamarin.Forms;
 using XF.Material.Forms.Models;
 
 namespace ChipsDemo.ViewModels
 {
-    public class ChipsPageViewModel : ViewModelBase
+    public class HomePageViewModel : ViewModelBase
     {
-        
-
-        public ChipsPageViewModel(INavigationService navigationPage) : base(navigationPage)
+        public HomePageViewModel(INavigationService navigationPage) : base(navigationPage)
         {
             ObservableCollection<MaterialMenuItem> data = new ObservableCollection<MaterialMenuItem>();
             data.Add(new MaterialMenuItem() { Text = "Mango" });

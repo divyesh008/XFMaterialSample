@@ -20,13 +20,13 @@ namespace ChipsDemo
             InitializeComponent();
             XF.Material.Forms.Material.Init(this);
 
-            await NavigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(ChipsPage)}");
+            await NavigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(HomePage)}");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
-            containerRegistry.RegisterForNavigation<ChipsPage, ChipsPageViewModel>();
+            containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>();
         }
     }
 }

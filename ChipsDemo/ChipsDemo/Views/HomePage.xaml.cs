@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace ChipsDemo.Views
 {
-    public partial class ChipsPage : ContentPage
+    public partial class HomePage : ContentPage
     {
-        public ChipsPage()
+        public HomePage()
         {
             InitializeComponent();
         }
